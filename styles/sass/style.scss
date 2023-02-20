@@ -1,0 +1,9 @@
+// setup
+@use './partials/setup';
+@use './partials/global';
+@use './partials/variables';
+// pages
+@use './partials/homePage';
+
+// media queries
+@use './partials/mediaQueries';
