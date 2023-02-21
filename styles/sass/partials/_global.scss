@@ -2,3 +2,23 @@
 @use './variables' as *;
 
 // wrapper
+.wrapper {
+    width: 90%;
+}
+
+// images
+img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+// list style changed to none
+ul {
+    list-style-type: none;
+}
+
+// anchor tags
+a {
+    text-decoration: none;
+}

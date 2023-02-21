@@ -2,8 +2,12 @@
 @use './partials/setup';
 @use './partials/global';
 @use './partials/variables';
-// pages
-@use './partials/homePage';
+// content
+@use './partials/nav';
+@use './partials/header';
+@use './partials/sections';
+@use './partials/footer';
+
 
 // media queries
 @use './partials/mediaQueries';
