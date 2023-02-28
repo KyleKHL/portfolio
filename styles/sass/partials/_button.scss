@@ -1,0 +1,7 @@
+// Variables
+@use './variables' as *;
+
+button {
+    font-family: $bodyFont;
+    line-height: 1.6;
+}

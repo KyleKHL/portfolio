@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Lau | Web Developer</title>
+    <!-- Link to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
     <!-- Link to font awesome icons -->
     <script src="https://kit.fontawesome.com/cf6b27505f.js" crossorigin="anonymous"></script>
     <!-- Link to stylesheet -->
@@ -13,7 +17,7 @@
 <body>
     <!-- main nav bar -->
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="#header">Home</a></li>
             <li><a href="#aboutMe">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -48,9 +52,6 @@
                     </div>
                     <!-- article container -->
                     <div class="aboutMeTextContainer">
-                        <p></p>
-                        <p></p>
-                        <p></p>
                         <p></p>
                     </div>
                 </div>
@@ -159,13 +160,17 @@
                     <!-- contact icon list -->
                     <ul class="contactIconList">
                         <li>
-                            <!-- linkedin -->
+                            <a href="https://www.linkedin.com/in/kyle-kh-lau/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
                         </li>
                         <li>
-                            <!-- calendly -->
+                            <a href="https://github.com/KyleKHL"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li>
-                            <!-- github -->
+                            <a href="https://calendly.com/kylelaudev">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </a>
                         </li>
                     </ul>
                     <!-- end of contact icon list -->
@@ -174,16 +179,16 @@
                 <!-- form container -->
                 <div class="formContainer">
                     <!-- form start -->
-                    <form action="">
+                    <form action="#" method="post" name="contactForm" class="contactForm">
                         <!-- name -->
-                        <label for="name"></label>
+                        <label for="name" class="sr-only">Name</label>
                         <input type="text" name="name" required="true" id="name" placeholder="Name">
                         <!-- email -->
-                        <label for="userEmail"></label>
+                        <label for="userEmail" class="sr-only">Email</label>
                         <input type="email" name="email" required="true" id="userEmail" placeholder="Email">
                         <!-- input text -->
-                        <label for="message"></label>
-                        <input type="text" name="message" required="true" id="message" placeholder="Message">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Message" required="true"></textarea>
                         <!-- submit button -->
                         <button type="submit"></button>
                     </form>

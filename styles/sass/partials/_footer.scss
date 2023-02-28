@@ -1,2 +1,9 @@
 // Variables
 @use './variables' as *;
+
+
+
+footer .wrapper {
+    display: flex;
+    justify-content: center;
+}

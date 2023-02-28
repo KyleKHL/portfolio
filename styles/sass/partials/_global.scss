@@ -1,6 +1,20 @@
 // Variables
 @use './variables' as *;
 
+// Typography
+html {
+    color: $basicFontColor;
+}
+
+p {
+    font-family: $bodyFont;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $titleFont;
+}
+
 // wrapper
 .wrapper {
     width: 90%;
@@ -17,9 +31,12 @@ img {
 // list style changed to none
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 // anchor tags
 a {
+    font-family: $bodyFont;
     text-decoration: none;
 }

@@ -1,4 +1,26 @@
-// fonts
-
-
 // colors
+$primaryColor: #0C6291;
+$secondaryColor: #3D80B1;
+$tertiaryColor: #62A0D3;
+$backgroundColorOne: #A7E2FF;
+$backgroundColorTwo: white;
+$basicFontColor: #2c2c2c;
+
+// night mode colors
+$nightModePrimary: black;
+$nightModeSecondary: #F5CB5C;
+
+
+// Fonts
+$titleFont: 'Rubik', sans-serif;
+$bodyFont: 'Karla', sans-serif;
+
+
+// Typography
+@mixin primaryFont($sizeValue){
+    font-size: $sizeValue;
+    font-family: $primaryFont;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}

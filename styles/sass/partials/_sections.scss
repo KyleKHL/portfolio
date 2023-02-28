@@ -1,2 +1,67 @@
 // Variables
 @use './variables' as *;
+
+// about me section
+
+
+
+// end of about me section
+
+// skills section
+
+.iconList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        i {
+            font-size: 4rem;
+        }
+    }
+}
+
+// end of skills section
+
+// project section 
+
+// end of project section
+
+// contact section
+section.contact {
+    padding: 100px 0;
+}
+
+section.contact .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfoContainer {
+    width: 48%;
+    ul{
+        display: flex;
+        gap: 1rem;
+        
+        i{
+            font-size: 4rem;
+        }
+    }
+}
+
+.formContainer {
+    width: 48%;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    textarea {
+        resize: none;
+        padding: 20px ;
+    }
+}
+// end of contact section
