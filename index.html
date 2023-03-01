@@ -48,11 +48,11 @@
                 <div class="aboutMeContentContainer">
                     <!-- Profile Image Container -->
                     <div class="profileImageContainer">
-
+                        <img src="./images/kylePortfolioPic.jpeg" alt="Profile picture of Kyle Lau">
                     </div>
                     <!-- article container -->
                     <div class="aboutMeTextContainer">
-                        <p></p>
+                        <p>Hello! My name is Kyle and I am a front-end developer studying at Juno College's Immersive Web Development Bootcamp. With experience in HTML, CSS, JavaScript, and React, I have a passion to build accessible and responsive code. <br> As a nurse with years of experience in the healthcare industry, I bring my unique perspective and skills to a web development team. My ability to communicate effectively with clients, attention to detail and passion for learning make me a valuable asset to the team. My experience working in fast-paced, team oriented environments has enabled me to thrive in group settings and contribute positively to the success of the team. Whether working in a team or independently, I am dedicated to producing exceptional work while meeting tight deadlines. <br> With a passion for problem-solving and a dedication to continuous improvement, I am excited to leverage my diverse background and technical skills to make meaningful contributions to a dynamic and innovative organization. Let's connect and explore potential opportunities further.</p>
                     </div>
                 </div>
                 <!-- end of about me content container -->
@@ -97,8 +97,8 @@
                             <i class="fa-brands fa-git-alt"></i>
                             <p>Git</p>
                         </li>
-                        <li></li>
                         <li>
+                            <i class="fa-solid fa-server"></i>
                             <p>Firebase</p>
                         </li>
                         <li>
@@ -106,11 +106,11 @@
                             <p>RESTful APIs</p>
                         </li>
                         <li>
-                            <i class="fa-regular fa-universal-access"></i>
+                            <i class="fa-solid fa-universal-access"></i>
                             <p>Accessibility</p>
                         </li>
                         <li>
-                            <i class="fa-solid fa-display-code"></i>
+                            <i class="fa-solid fa-desktop"></i>
                             <p>Responsive Design</p>
                         </li>
                     </ul>
@@ -154,47 +154,49 @@
         <section class="contact" id="contact">
             <div class="wrapper">
                 <!-- contact info container -->
-                <div class="contactInfoContainer">
-                    <h3>Let's Connect!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis vel possimus beatae, temporibus a, quidem sed in voluptates doloremque magnam rerum.</p>
-                    <!-- contact icon list -->
-                    <ul class="contactIconList">
-                        <li>
-                            <a href="https://www.linkedin.com/in/kyle-kh-lau/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/KyleKHL"><i class="fa-brands fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://calendly.com/kylelaudev">
-                                <i class="fa-solid fa-calendar-days"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- end of contact icon list -->
+                <h3>Let's Connect!</h3>
+                <div class="contactContentContainer">
+                    <div class="contactInfoContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis vel possimus beatae, temporibus a, quidem sed in voluptates doloremque magnam rerum.</p>
+                        <!-- contact icon list -->
+                        <ul class="contactIconList">
+                            <li>
+                                <a href="https://www.linkedin.com/in/kyle-kh-lau/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KyleKHL"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://calendly.com/kylelaudev">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end of contact icon list -->
+                    </div>
+                    <!-- end of contact info container -->
+                    <!-- form container -->
+                    <div class="formContainer">
+                        <!-- form start -->
+                        <form action="#" method="post" name="contactForm" class="contactForm">
+                            <!-- name -->
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" required="true" id="name" placeholder="Name">
+                            <!-- email -->
+                            <label for="userEmail" class="sr-only">Email</label>
+                            <input type="email" name="email" required="true" id="userEmail" placeholder="Email">
+                            <!-- input text -->
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Message" required="true"></textarea>
+                            <!-- submit button -->
+                            <button type="submit">Submit</button>
+                        </form>
+                        <!-- end of form -->
+                    </div>
+                    <!-- end of form container -->
                 </div>
-                <!-- end of contact info container -->
-                <!-- form container -->
-                <div class="formContainer">
-                    <!-- form start -->
-                    <form action="#" method="post" name="contactForm" class="contactForm">
-                        <!-- name -->
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" name="name" required="true" id="name" placeholder="Name">
-                        <!-- email -->
-                        <label for="userEmail" class="sr-only">Email</label>
-                        <input type="email" name="email" required="true" id="userEmail" placeholder="Email">
-                        <!-- input text -->
-                        <label for="message" class="sr-only">Message</label>
-                        <textarea name="message" id="message" rows="5" placeholder="Message" required="true"></textarea>
-                        <!-- submit button -->
-                        <button type="submit"></button>
-                    </form>
-                    <!-- end of form -->
-                </div>
-                <!-- end of form container -->
             </div>
             <!-- end of wrapper -->
         </section>

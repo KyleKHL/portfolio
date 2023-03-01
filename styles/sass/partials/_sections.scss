@@ -2,7 +2,22 @@
 @use './variables' as *;
 
 // about me section
+.aboutMeContentContainer {
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.profileImageContainer {
+    width: 32%;
+    img {
+        border-radius: 2rem;
+    }
+}
+
+.aboutMeTextContainer {
+    width: 62%;
+}
 
 
 // end of about me section
@@ -36,7 +51,7 @@ section.contact {
     padding: 100px 0;
 }
 
-section.contact .wrapper {
+.contactContentContainer {
     display: flex;
     justify-content: space-between;
 }
@@ -59,9 +74,25 @@ section.contact .wrapper {
 .contactForm {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    input {
+        padding: 20px;
+        font-family: $bodyFont;
+        line-height: 1.6;
+    }
     textarea {
+        font-family: $bodyFont;
+        line-height: 1.6;
         resize: none;
-        padding: 20px ;
+        padding: 20px;
+
+    }
+    button {
+        font-family: $bodyFont;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: $primaryColor;
+        color: $seconddaryFontColor;
     }
 }
 // end of contact section

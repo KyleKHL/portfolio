@@ -6,6 +6,10 @@ html {
     color: $basicFontColor;
 }
 
+body {
+    background-color: $backgroundColorThree;
+}
+
 p {
     font-family: $bodyFont;
     line-height: 1.6;
