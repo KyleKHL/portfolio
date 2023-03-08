@@ -16,7 +16,7 @@ section.aboutMe {
 .profileImageContainer {
     width: 32%;
     img {
-        border-radius: 4rem;
+        border-radius: 10%;
     }
 }
 
@@ -37,13 +37,19 @@ section.skills {
     color: $secondaryFontColor;
     h3 {
         margin-top: 0;
+        text-align: center;
     }
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .iconList {
     display: flex;
     flex-wrap: wrap;
-
+    max-width: 750px;
     li {
         display: flex;
         flex-direction: column;
@@ -59,6 +65,13 @@ section.skills {
 // end of skills section
 
 // project section 
+section.projects{
+    padding: 75px 0;
+    h3{
+        margin-top: 0;
+    }
+}
+
 .projectsContainer {
     display: flex;
     flex-direction: column;
@@ -101,8 +114,11 @@ section.skills {
 
 // contact section
 section.contact {
-    padding: 100px 0;
+    padding: 75px 0;
     background-color: $backgroundColorTwo;
+    h3{
+        margin-top: 0;
+    }
 }
 
 .contactContentContainer {
@@ -111,13 +127,20 @@ section.contact {
 }
 
 .contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     width: 48%;
-    ul{
+    p {
+        margin-top: 0;
+    }
+    ul {
         display: flex;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 50px;
         
         i{
-            font-size: 4rem;
+            font-size: 3rem;
             color: $primaryColor;
         }
     }

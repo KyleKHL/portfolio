@@ -238,6 +238,8 @@ html {
 
 html {
   color: #2c2c2c;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 90px);
 }
 
 body {
@@ -307,11 +309,11 @@ nav .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 40px;
   padding: 30px 0;
 }
 .menu a {
-  color: #0C6291;
+  color: #2c2c2c;
 }
 .menu .navContact a {
   background-color: #F5CB5C;
@@ -357,7 +359,7 @@ section.aboutMe {
   width: 32%;
 }
 .profileImageContainer img {
-  border-radius: 4rem;
+  border-radius: 10%;
 }
 
 .aboutMeTextContainer {
@@ -374,6 +376,16 @@ section.skills {
 }
 section.skills h3 {
   margin-top: 0;
+  text-align: center;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .iconList {
@@ -382,6 +394,7 @@ section.skills h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 750px;
 }
 .iconList li {
   display: -webkit-box;
@@ -401,6 +414,13 @@ section.skills h3 {
 }
 .iconList li i {
   font-size: 4rem;
+}
+
+section.projects {
+  padding: 75px 0;
+}
+section.projects h3 {
+  margin-top: 0;
 }
 
 .projectsContainer {
@@ -462,8 +482,11 @@ section.skills h3 {
 }
 
 section.contact {
-  padding: 100px 0;
+  padding: 75px 0;
   background-color: #A7E2FF;
+}
+section.contact h3 {
+  margin-top: 0;
 }
 
 .contactContentContainer {
@@ -476,16 +499,29 @@ section.contact {
 }
 
 .contactInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
   width: 48%;
+}
+.contactInfoContainer p {
+  margin-top: 0;
 }
 .contactInfoContainer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
 }
 .contactInfoContainer ul i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #0C6291;
 }
 

@@ -4,6 +4,8 @@
 // Typography
 html {
     color: $basicFontColor;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 90px);
 }
 
 body {
