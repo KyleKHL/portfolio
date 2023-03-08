@@ -11,7 +11,7 @@
 .profileImageContainer {
     width: 32%;
     img {
-        border-radius: 2rem;
+        border-radius: 4rem;
     }
 }
 
@@ -43,6 +43,40 @@
 // end of skills section
 
 // project section 
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree,
+.projectFour {
+    display: flex;
+    justify-content: space-between;
+    .projectButtonsContainer{
+        display: flex;
+    }
+}
+
+.projectTwo,
+.projectFour {
+    flex-direction: row-reverse;
+    .projectButtonsContainer {
+        justify-content: flex-end;
+    }
+}
+
+.projectImgContainer,
+.projectTextContainer {
+    width: 48%;
+}
+
+.projectButton {
+    background-color: $nightModeSecondary;
+    padding: 10px 30px;
+}
 
 // end of project section
 

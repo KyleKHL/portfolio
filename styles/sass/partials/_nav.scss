@@ -8,6 +8,16 @@ nav {
     width: 100%;
 }
 
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -15,5 +25,9 @@ nav {
     padding: 30px 0;
     a {
         color: $primaryColor;
+    }
+    .navContact a {
+            background-color: $nightModeSecondary;
+            padding: 10px 30px;
     }
 }

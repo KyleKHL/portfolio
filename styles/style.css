@@ -253,6 +253,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik", sans-serif;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -282,6 +286,20 @@ nav {
   width: 100%;
 }
 
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +312,10 @@ nav {
 }
 .menu a {
   color: #0C6291;
+}
+.menu .navContact a {
+  background-color: #F5CB5C;
+  padding: 10px 30px;
 }
 
 header {
@@ -330,7 +352,7 @@ header .wrapper {
   width: 32%;
 }
 .profileImageContainer img {
-  border-radius: 2rem;
+  border-radius: 4rem;
 }
 
 .aboutMeTextContainer {
@@ -362,6 +384,61 @@ header .wrapper {
 }
 .iconList li i {
   font-size: 4rem;
+}
+
+.projectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 150px;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree,
+.projectFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projectOne .projectButtonsContainer,
+.projectTwo .projectButtonsContainer,
+.projectThree .projectButtonsContainer,
+.projectFour .projectButtonsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectTwo,
+.projectFour {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.projectTwo .projectButtonsContainer,
+.projectFour .projectButtonsContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projectImgContainer,
+.projectTextContainer {
+  width: 48%;
+}
+
+.projectButton {
+  background-color: #F5CB5C;
+  padding: 10px 30px;
 }
 
 section.contact {
