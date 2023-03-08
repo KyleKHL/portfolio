@@ -241,7 +241,7 @@ html {
 }
 
 body {
-  background-color: #fcfaea;
+  background-color: white;
 }
 
 p {
@@ -280,7 +280,7 @@ a {
 }
 
 nav {
-  background-color: #A7E2FF;
+  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -339,6 +339,11 @@ header .wrapper {
           align-items: center;
 }
 
+section.aboutMe {
+  background-color: #fcfaea;
+  padding: 75px 0;
+}
+
 .aboutMeContentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +362,18 @@ header .wrapper {
 
 .aboutMeTextContainer {
   width: 62%;
+}
+.aboutMeTextContainer h3 {
+  margin-top: 30px;
+}
+
+section.skills {
+  background-color: #0C6291;
+  padding: 75px 0;
+  color: white;
+}
+section.skills h3 {
+  margin-top: 0;
 }
 
 .iconList {
@@ -415,6 +432,7 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 
 .projectTwo,
@@ -439,10 +457,13 @@ header .wrapper {
 .projectButton {
   background-color: #F5CB5C;
   padding: 10px 30px;
+  color: #2c2c2c;
+  font-weight: bold;
 }
 
 section.contact {
   padding: 100px 0;
+  background-color: #A7E2FF;
 }
 
 .contactContentContainer {
@@ -465,6 +486,7 @@ section.contact {
 }
 .contactInfoContainer ul i {
   font-size: 4rem;
+  color: #0C6291;
 }
 
 .formContainer {
@@ -496,8 +518,13 @@ section.contact {
   font-family: "Karla", sans-serif;
   line-height: 1.6;
   padding: 20px;
+  background-color: #F5CB5C;
+  color: #2c2c2c;
+  font-weight: 700;
+}
+
+footer {
   background-color: #0C6291;
-  color: white;
 }
 
 footer .wrapper {
@@ -507,4 +534,7 @@ footer .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+footer .wrapper p {
+  color: white;
 }

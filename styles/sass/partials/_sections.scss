@@ -2,6 +2,11 @@
 @use './variables' as *;
 
 // about me section
+section.aboutMe {
+    background-color: $backgroundColorThree;
+    padding: 75px 0;
+}
+
 .aboutMeContentContainer {
     display: flex;
     justify-content: space-between;
@@ -17,12 +22,23 @@
 
 .aboutMeTextContainer {
     width: 62%;
+    h3 {
+        margin-top: 30px;
+    }
 }
 
 
 // end of about me section
 
 // skills section
+section.skills {
+    background-color: $primaryColor;
+    padding: 75px 0;
+    color: $secondaryFontColor;
+    h3 {
+        margin-top: 0;
+    }
+}
 
 .iconList {
     display: flex;
@@ -57,6 +73,7 @@
     justify-content: space-between;
     .projectButtonsContainer{
         display: flex;
+        gap: 10px;
     }
 }
 
@@ -76,6 +93,8 @@
 .projectButton {
     background-color: $nightModeSecondary;
     padding: 10px 30px;
+    color: $basicFontColor;
+    font-weight: bold;
 }
 
 // end of project section
@@ -83,6 +102,7 @@
 // contact section
 section.contact {
     padding: 100px 0;
+    background-color: $backgroundColorTwo;
 }
 
 .contactContentContainer {
@@ -98,6 +118,7 @@ section.contact {
         
         i{
             font-size: 4rem;
+            color: $primaryColor;
         }
     }
 }
@@ -125,8 +146,9 @@ section.contact {
         font-family: $bodyFont;
         line-height: 1.6;
         padding: 20px;
-        background-color: $primaryColor;
-        color: $seconddaryFontColor;
+        background-color: $nightModeSecondary;
+        color: $basicFontColor;
+        font-weight: 700;
     }
 }
 // end of contact section

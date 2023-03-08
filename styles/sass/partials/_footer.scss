@@ -2,8 +2,14 @@
 @use './variables' as *;
 
 
+footer {
+    background-color: $primaryColor;
+}
 
 footer .wrapper {
     display: flex;
     justify-content: center;
+    p {
+        color: white;
+    }
 }
