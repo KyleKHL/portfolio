@@ -359,7 +359,7 @@ section.aboutMe {
   width: 32%;
 }
 .profileImageContainer img {
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
 .aboutMeTextContainer {
@@ -367,6 +367,9 @@ section.aboutMe {
 }
 .aboutMeTextContainer h3 {
   margin-top: 30px;
+}
+.aboutMeTextContainer p {
+  margin: 0;
 }
 
 section.skills {
@@ -394,9 +397,19 @@ section.skills h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 750px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 150px;
+     -moz-column-gap: 150px;
+          column-gap: 150px;
+  max-width: 900px;
 }
 .iconList li {
+  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,10 +423,13 @@ section.skills h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  margin: 20px 0;
 }
 .iconList li i {
   font-size: 4rem;
+}
+.iconList li p {
+  text-align: center;
 }
 
 section.projects {

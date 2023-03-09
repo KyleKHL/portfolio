@@ -16,7 +16,7 @@ section.aboutMe {
 .profileImageContainer {
     width: 32%;
     img {
-        border-radius: 10%;
+        border-radius: 50%;
     }
 }
 
@@ -24,6 +24,9 @@ section.aboutMe {
     width: 62%;
     h3 {
         margin-top: 30px;
+    }
+    p{
+        margin: 0;
     }
 }
 
@@ -49,15 +52,22 @@ section.skills {
 .iconList {
     display: flex;
     flex-wrap: wrap;
-    max-width: 750px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 150px;
+    max-width: 900px;
     li {
+        width: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        margin: 20px 0;
         i {
             font-size: 4rem;
+        }
+        p {
+            text-align: center;
         }
     }
 }
