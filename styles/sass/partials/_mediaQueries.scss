@@ -1,2 +1,104 @@
 // Variables
 @use './variables' as *;
+
+@media (max-width: 900px) {
+    // contact section media query
+    .contactContentContainer {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contactInfoContainer,
+    .formContainer {
+        width: 100%;
+    }
+    .contactIconList {
+        justify-content: space-evenly;
+    }
+    // contact section end
+
+}
+
+
+@media (max-width: 850px ) {
+    // media query for navbar and hamburger menu
+    nav .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        .logo{
+            margin-left: 6%;
+        }
+    }
+    .menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 0;
+        gap: 0;
+        li {
+            width: 100%;
+            a{  
+                display: block;
+                padding: 40px 15px;
+            }
+        }
+    }
+    .hiddenAppear{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex;
+        position: absolute;
+        top: 27px;
+        right: 6%;
+    }
+    .menu .navContact a {
+        padding: 40px 15px;
+        background-color: $navBarColor;
+        border: none;
+    }
+    .menu .navContact a:hover{
+        background-color: $nightModeSecondary;
+    }
+    .navLink::after {
+        display: none;
+    }
+    .navLink:hover{
+        background-color: $nightModeSecondary;
+    }
+    //  navBar/ hamburger menu END
+    // start of project section
+    .projectsContainer {
+        gap: 100px;
+    }
+
+    .projectOne, 
+    .projectTwo,
+    .projectThree,
+    .projectFour {
+        flex-direction: column-reverse;
+    }
+
+    .projectImgContainer,
+    .projectTextContainer {
+        width: 100%;
+    }
+    .projectTwo,
+    .projectFour{
+        .projectButtonsContainer {
+                justify-content: flex-start;
+            }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .iconList {
+        width: 80%;
+        column-gap: 100px;
+        li i {
+                font-size: 2rem;
+        }
+    } 
+}

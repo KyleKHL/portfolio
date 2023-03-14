@@ -2,7 +2,7 @@
 @use './variables' as *;
 
 nav {
-    background-color: $backgroundColorOne;
+    background-color: $navBarColor;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,6 +32,23 @@ nav .wrapper {
             font-weight: 700;
     }
 }
+
+// hamburger menu
+.hamburgerMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 26px;
+    .bar {
+            height: 3px;
+            width: 100%;
+            background-color: $basicFontColor;
+            border-radius: 10px;
+        }
+}
+
+// end of hamburger menu
 
 // hover animations
 .navLink {
