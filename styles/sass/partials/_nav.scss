@@ -29,5 +29,29 @@ nav .wrapper {
     .navContact a {
             background-color: $nightModeSecondary;
             padding: 10px 30px;
+            font-weight: 700;
     }
+}
+
+// hover animations
+.navLink {
+    position: relative;
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 100%;
+    background-color: $basicFontColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in;
+}
+
+.navLink:hover::after, .navLink:focus::after {
+    transform: scaleX(1.1);
+    transform-origin: left;
 }

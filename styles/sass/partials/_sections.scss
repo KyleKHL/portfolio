@@ -113,11 +113,25 @@ section.projects{
     width: 48%;
 }
 
+.projectImgContainer{
+    background-color: $backgroundColorThree;
+}
+
 .projectButton {
     background-color: $nightModeSecondary;
     padding: 10px 30px;
     color: $basicFontColor;
     font-weight: bold;
+}
+.projectTitle {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+.projectLanguages {
+    color: $primaryColor;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 7px;
 }
 
 // end of project section
