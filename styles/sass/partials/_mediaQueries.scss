@@ -59,13 +59,13 @@
         border: none;
     }
     .menu .navContact a:hover{
-        background-color: $nightModeSecondary;
+        background-color: $buttonColor;
     }
     .navLink::after {
         display: none;
     }
     .navLink:hover{
-        background-color: $nightModeSecondary;
+        background-color: $buttonColor;
     }
     //  navBar/ hamburger menu END
     // start of project section

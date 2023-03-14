@@ -122,7 +122,7 @@ section.projects{
 }
 
 .projectButton {
-    background-color: $nightModeSecondary;
+    background-color: $buttonColor;
     padding: 10px 30px;
     color: $basicFontColor;
     font-weight: bold;
@@ -197,7 +197,7 @@ section.contact {
         font-family: $bodyFont;
         line-height: 1.6;
         padding: 20px;
-        background-color: $nightModeSecondary;
+        background-color: $buttonColor;
         color: $basicFontColor;
         font-weight: 700;
     }

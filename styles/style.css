@@ -290,7 +290,7 @@ a {
 }
 
 nav {
-  background-color: #98ab91;
+  background-color: rgba(198, 218, 191, 0.9333333333);
   position: fixed;
   top: 0;
   width: 100%;
@@ -733,7 +733,7 @@ footer .wrapper p {
   }
   .menu .navContact a {
     padding: 40px 15px;
-    background-color: #98ab91;
+    background-color: rgba(198, 218, 191, 0.9333333333);
     border: none;
   }
   .menu .navContact a:hover {
