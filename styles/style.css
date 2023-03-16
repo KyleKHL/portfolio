@@ -306,7 +306,7 @@ nav .wrapper {
 }
 
 .logo {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -378,7 +378,6 @@ nav .wrapper {
 }
 
 header {
-  margin-top: 100px;
   height: 100vh;
 }
 header .wrapper {
@@ -386,21 +385,90 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+header .wrapper .headerTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 60%;
+}
+header .wrapper .headerImgContainer {
+  max-width: 375px;
+}
+header .wrapper .headerImgContainer img {
+  border-radius: 5rem;
 }
 
+.typedTextContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.typedText {
+  font-family: monospace;
+  max-width: 445px;
+  overflow: hidden;
+  border-right: 0.5em solid #2c2c2c;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2rem;
+  -webkit-animation: typing 3.5s steps(22, end), blink 0.85s step-end infinite;
+          animation: typing 3.5s steps(22, end), blink 0.85s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2c2c2c;
+  }
+}
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2c2c2c;
+  }
+}
 section.aboutMe {
   background-color: #e7e6d8;
   padding: 75px 0;
+}
+section.aboutMe h3 {
+  margin-top: 0;
 }
 
 .aboutMeContentContainer {
@@ -421,9 +489,6 @@ section.aboutMe {
 
 .aboutMeTextContainer {
   width: 62%;
-}
-.aboutMeTextContainer h3 {
-  margin-top: 30px;
 }
 .aboutMeTextContainer p {
   margin: 0;
@@ -574,6 +639,11 @@ section.projects h3 {
   margin-top: 7px;
 }
 
+.partnerGitHubLink {
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
 section.contact {
   padding: 75px 0;
   background-color: #a2cddb;
@@ -617,6 +687,11 @@ section.contact h3 {
   font-size: 3rem;
   color: #114B5F;
 }
+.contactInfoContainer ul i:hover {
+  color: #ffd786;
+  -webkit-transition: ease 600ms;
+  transition: ease 600ms;
+}
 
 .formContainer {
   width: 48%;
@@ -650,6 +725,7 @@ section.contact h3 {
   background-color: #ffd786;
   color: #2c2c2c;
   font-weight: 700;
+  border: none;
 }
 
 footer {
@@ -699,7 +775,7 @@ footer .wrapper p {
     width: 100%;
   }
   nav .wrapper .logo {
-    margin-left: 6%;
+    margin-left: 5%;
   }
   .menu {
     -webkit-box-orient: vertical;
@@ -718,7 +794,8 @@ footer .wrapper p {
   }
   .menu li a {
     display: block;
-    padding: 40px 15px;
+    padding: 40px 0;
+    margin-left: 5%;
   }
   .hiddenAppear {
     display: none;
@@ -729,10 +806,11 @@ footer .wrapper p {
     display: flex;
     position: absolute;
     top: 27px;
-    right: 6%;
+    right: 5%;
   }
   .menu .navContact a {
-    padding: 40px 15px;
+    padding: 40px 0;
+    margin-left: 5%;
     background-color: rgba(198, 218, 191, 0.9333333333);
     border: none;
   }
@@ -744,6 +822,23 @@ footer .wrapper p {
   }
   .navLink:hover {
     background-color: #ffd786;
+  }
+  .aboutMeContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profileImageContainer {
+    width: 50%;
+    min-width: 250px;
+    margin-bottom: 50px;
+  }
+  .aboutMeTextContainer {
+    width: 100%;
   }
   .projectsContainer {
     gap: 100px;
@@ -768,7 +863,42 @@ footer .wrapper p {
             justify-content: flex-start;
   }
 }
+@media (max-width: 800px) {
+  header {
+    margin-bottom: 150px;
+    margin-top: 100px;
+  }
+  header .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 0;
+  }
+  header .wrapper .headerTextContainer {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .wrapper .headerImgContainer {
+    width: 80%;
+  }
+  .headerTextContainer h1 {
+    text-align: center;
+  }
+  .typedTextContainer {
+    -ms-flex-item-align: auto;
+        align-self: auto;
+  }
+}
 @media (max-width: 600px) {
+  .typedText {
+    font-size: 1.2rem;
+  }
   .iconList {
     width: 80%;
     -webkit-column-gap: 100px;
@@ -777,5 +907,10 @@ footer .wrapper p {
   }
   .iconList li i {
     font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .typedText {
+    font-size: 0.95rem;
   }
 }

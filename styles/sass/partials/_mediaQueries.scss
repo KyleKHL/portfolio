@@ -27,7 +27,7 @@
         position: relative;
         width: 100%;
         .logo{
-            margin-left: 6%;
+            margin-left: 5%;
         }
     }
     .menu {
@@ -40,7 +40,8 @@
             width: 100%;
             a{  
                 display: block;
-                padding: 40px 15px;
+                padding: 40px 0;
+                margin-left: 5%;
             }
         }
     }
@@ -51,10 +52,11 @@
         display: flex;
         position: absolute;
         top: 27px;
-        right: 6%;
+        right: 5%;
     }
     .menu .navContact a {
-        padding: 40px 15px;
+        padding: 40px 0;
+        margin-left: 5%;
         background-color: $navBarColor;
         border: none;
     }
@@ -68,6 +70,22 @@
         background-color: $buttonColor;
     }
     //  navBar/ hamburger menu END
+    // start of about me section
+    .aboutMeContentContainer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .profileImageContainer {
+        width: 50%;
+        min-width: 250px;
+        margin-bottom: 50px;
+    }
+    .aboutMeTextContainer {
+        width: 100%;
+    }
+    // end of about me section
+
     // start of project section
     .projectsContainer {
         gap: 100px;
@@ -93,7 +111,41 @@
 
 }
 
+@media (max-width: 800px) {
+    // header container
+    header{
+        margin-bottom: 150px;
+        margin-top: 100px;
+        .wrapper {
+                flex-direction: column-reverse;
+                justify-content: space-evenly;
+                gap: 0;
+                .headerTextContainer{
+                    width: auto;
+                    align-items: center;
+                }
+                .headerImgContainer {
+                    width: 80%;
+                }
+            }
+
+    }
+    .headerTextContainer h1 {
+        text-align: center;
+    }
+    .typedTextContainer {
+        align-self: auto;
+    }
+}
+
+
 @media (max-width: 600px) {
+    // header type writer text
+    .typedText {
+        font-size: 1.2rem;
+    }
+    
+    // icons
     .iconList {
         width: 80%;
         column-gap: 100px;
@@ -101,4 +153,11 @@
                 font-size: 2rem;
         }
     } 
+}
+
+@media (max-width: 400px) {
+    // typed text font size
+    .typedText{
+        font-size: .95rem;
+    }
 }

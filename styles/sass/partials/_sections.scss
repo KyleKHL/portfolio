@@ -5,6 +5,9 @@
 section.aboutMe {
     background-color: $backgroundColorThree;
     padding: 75px 0;
+    h3 {
+        margin-top: 0;
+    }
 }
 
 .aboutMeContentContainer {
@@ -22,9 +25,6 @@ section.aboutMe {
 
 .aboutMeTextContainer {
     width: 62%;
-    h3 {
-        margin-top: 30px;
-    }
     p{
         margin: 0;
     }
@@ -127,10 +127,12 @@ section.projects{
     color: $basicFontColor;
     font-weight: bold;
 }
+
 .projectTitle {
     font-size: 1.75rem;
     margin-bottom: 0;
 }
+
 .projectLanguages {
     color: $primaryColor;
     font-size: 1.25rem;
@@ -138,6 +140,10 @@ section.projects{
     margin-top: 7px;
 }
 
+.partnerGitHubLink {
+    font-weight: 700;
+    color: $basicFontColor;
+}
 // end of project section
 
 // contact section
@@ -171,6 +177,10 @@ section.contact {
             font-size: 3rem;
             color: $primaryColor;
         }
+        i:hover{
+            color: $buttonColor;
+            transition: ease 600ms;
+        }
     }
 }
 
@@ -200,6 +210,7 @@ section.contact {
         background-color: $buttonColor;
         color: $basicFontColor;
         font-weight: 700;
+        border: none;
     }
 }
 // end of contact section

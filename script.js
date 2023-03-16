@@ -22,3 +22,10 @@ navLink.forEach(button => {
         navList.classList.toggle('hiddenAppear');
     })
 });
+
+// formspree form reset
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+    }
+}

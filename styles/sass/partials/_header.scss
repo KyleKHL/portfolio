@@ -2,14 +2,64 @@
 @use './variables' as *;
 
 header {
-    margin-top: 100px;
     height: 100vh;
+    // min-height: 750px;
     .wrapper {
         height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        gap: 20px;
+        .headerTextContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 60%;
+        }
+        .headerImgContainer {
+            max-width: 375px;
+            // margin-left: 10px;
+            img{
+                border-radius: 5rem;
+            }
+        }
+    }
+
+}
+
+.typedTextContainer {
+    align-self: flex-end;
+}
+
+.typedText {
+    font-family: monospace;
+    max-width: 445px;
+    overflow: hidden;
+    border-right: .5em solid $basicFontColor;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .2rem;
+    animation:
+        typing 3.5s steps(22, end),
+        blink 0.85s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
     }
 }
 
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: $basicFontColor;
+    }
+}
