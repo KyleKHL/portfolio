@@ -40,8 +40,7 @@
             width: 100%;
             a{  
                 display: block;
-                padding: 40px 0;
-                margin-left: 5%;
+                padding: 40px 5% 40px 5%;
             }
         }
     }
@@ -55,10 +54,9 @@
         right: 5%;
     }
     .menu .navContact a {
-        padding: 40px 0;
-        margin-left: 5%;
-        background-color: $navBarColor;
-        border: none;
+        padding: 40px 5% 40px 5%;
+        background-color: transparent;
+        box-shadow: none;
     }
     .menu .navContact a:hover{
         background-color: $buttonColor;
@@ -96,6 +94,7 @@
     .projectThree,
     .projectFour {
         flex-direction: column-reverse;
+        gap: 40px;
     }
 
     .projectImgContainer,

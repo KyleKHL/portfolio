@@ -3,25 +3,41 @@ const navBarHeight = document.querySelector('nav').offsetHeight;
 document.documentElement.style.setProperty('--scroll-padding', navBarHeight - 1 + 'px' );
 
 // hamburger menu
-const hamburgerButton = document.querySelector('#hamburger');
-const navList = document.querySelector('.menu');
-const navLink = document.querySelectorAll('.navLink');
-const navLinkContact = document.querySelector('.navLinkContact');
+const burgerMenu = {};
 
-hamburgerButton.addEventListener('click', (event) => {
+burgerMenu.hamburgerButton = document.querySelector('#hamburger');
+burgerMenu.exitMenu = document.querySelector('#exitMenu');
+burgerMenu.navList = document.querySelector('.menu');
+burgerMenu.navLink = document.querySelectorAll('.navLink');
+burgerMenu.navLinkContact = document.querySelector('.navLinkContact');
+
+burgerMenu.hamburgerButton.addEventListener('click', (event) => {
     event.preventDefault();
-    navList.classList.toggle('hiddenAppear');
+    burgerMenu.navList.classList.toggle('hiddenAppear');
+    burgerMenu.exitMenu.classList.toggle('fa-bars');
+    burgerMenu.exitMenu.classList.toggle('fa-xmark');
+
 })
 
-navLinkContact.addEventListener('click', (event) => {
-    navList.classList.toggle('hiddenAppear');
+burgerMenu.navLinkContact.addEventListener('click', (event) => {
+    hamburgerMenu.navList.classList.toggle('hiddenAppear');
 })
 
-navLink.forEach(button => {
+burgerMenu.navLink.forEach(button => {
     button.addEventListener('click', (event) => {
-        navList.classList.toggle('hiddenAppear');
+        hamburgerMenu.navList.classList.toggle('hiddenAppear');
     })
 });
+// End of hamburger menu
+
+// input /textarea 
+const connectForm = {};
+connectForm.nameInput = document.querySelector('#name');
+console.log(connectForm.nameInput);
+connectForm.nameInput.value.trim();
+
+
+
 
 // formspree form reset
 window.onbeforeunload = () => {

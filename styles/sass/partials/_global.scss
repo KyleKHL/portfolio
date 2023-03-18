@@ -35,15 +35,16 @@ h3 {
 
 // wrapper
 .wrapper {
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
 
 // images
 img {
-    height: auto;
     width: 100%;
     display: block;
+    max-height: auto;
 }
 
 // list style changed to none
