@@ -20,12 +20,16 @@ burgerMenu.hamburgerButton.addEventListener('click', (event) => {
 })
 
 burgerMenu.navLinkContact.addEventListener('click', (event) => {
-    hamburgerMenu.navList.classList.toggle('hiddenAppear');
+    burgerMenu.navList.classList.toggle('hiddenAppear');
+    burgerMenu.exitMenu.classList.toggle('fa-bars');
+    burgerMenu.exitMenu.classList.toggle('fa-xmark');
 })
 
 burgerMenu.navLink.forEach(button => {
     button.addEventListener('click', (event) => {
-        hamburgerMenu.navList.classList.toggle('hiddenAppear');
+        burgerMenu.navList.classList.toggle('hiddenAppear');
+        burgerMenu.exitMenu.classList.toggle('fa-bars');
+        burgerMenu.exitMenu.classList.toggle('fa-xmark');
     })
 });
 // End of hamburger menu
