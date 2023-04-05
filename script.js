@@ -37,7 +37,6 @@ burgerMenu.navLink.forEach(button => {
 // input /textarea 
 const connectForm = {};
 connectForm.nameInput = document.querySelector('#name');
-console.log(connectForm.nameInput);
 connectForm.nameInput.value.trim();
 
 

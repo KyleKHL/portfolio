@@ -11,6 +11,7 @@
     .formContainer {
         width: 100%;
     }
+
     .contactIconList {
         justify-content: space-evenly;
     }
@@ -68,6 +69,9 @@
     }
     .navLink:hover{
         background-color: $buttonColor;
+    }
+    .navLinkContact{
+        outline: none;
     }
     //  navBar/ hamburger menu END
     // start of about me section
@@ -160,5 +164,12 @@
     // typed text font size
     .typedText{
         font-size: .95rem;
+    }
+    // contact section font
+    .contactIconList i {
+        font-size: 2.5rem;
+    }
+    .contactIconList a {
+        font-size: 1rem;
     }
 }
