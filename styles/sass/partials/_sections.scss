@@ -208,9 +208,6 @@ section.contact {
             font-weight: 700;
             color: $primaryColor;
             }
-        a:nth-child(2) {
-            padding: 20px;
-        }
         i {
             font-size: 3rem;
             color: $primaryColor;
@@ -226,6 +223,7 @@ section.contact {
     }
         .contactLinkText {
             position: relative;
+            padding: 20px;
         }
     
         .contactLinkText::after {
