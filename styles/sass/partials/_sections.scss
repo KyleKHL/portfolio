@@ -275,6 +275,7 @@ section.contact {
         font-family: $bodyFont;
         line-height: 1.6;
         border-radius: 0.2rem;
+        border: 1px solid $basicFontColor;
     }
     textarea {
         font-family: $bodyFont;
@@ -282,6 +283,7 @@ section.contact {
         resize: none;
         padding: 20px;
         border-radius: 0.2rem;
+        border: 1px solid $basicFontColor;
     }
     input:focus, 
     textarea:focus{

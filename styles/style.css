@@ -825,6 +825,7 @@ section.contact h3 {
   font-family: "Karla", sans-serif;
   line-height: 1.6;
   border-radius: 0.2rem;
+  border: 1px solid #2c2c2c;
 }
 .contactForm textarea {
   font-family: "Karla", sans-serif;
@@ -832,6 +833,7 @@ section.contact h3 {
   resize: none;
   padding: 20px;
   border-radius: 0.2rem;
+  border: 1px solid #2c2c2c;
 }
 .contactForm input:focus,
 .contactForm textarea:focus {
