@@ -144,7 +144,7 @@ section.projects{
     transition: 150ms;
     text-shadow: 0px 1.5px #00000033;
     border-radius: 0.2rem;
-    outline: solid 1px $basicFontColor;
+    border: solid 1px $basicFontColor;
 }
 
 .projectButton:hover,
@@ -213,14 +213,20 @@ section.contact {
             font-weight: 700;
             color: $primaryColor;
             }
-        i {
+        .contactLinkIcon {
             font-size: 3rem;
             color: $primaryColor;
             }
+        .contactLinkIcon:hover,
+        .contactLinkIcon:focus {
+            color: $buttonColor;
+            transition: 150ms;
+            text-shadow: 1.5px 3px rgb(0, 0, 0);
+        }
     }
     li:hover,
     li:focus {
-        i{  
+        .contactLinkIcon{  
             color: $buttonColor;
             transition: 150ms;
             text-shadow: 1.5px 3px rgb(0, 0, 0);
@@ -239,7 +245,7 @@ section.contact {
             height: 5px;
             width: (calc(100% - 30px) );
             background-color: $buttonColor;
-            outline: 0.5px solid $basicFontColor;
+            border: 0.5px solid $basicFontColor;
             box-shadow: 3px 4px rgb(0, 0, 0);
             border-radius: 0.1rem;
             transform: scaleX(0);
@@ -290,12 +296,11 @@ section.contact {
         background-color: $buttonColor;
         color: $basicFontColor;
         font-weight: 700;
-        border: none;
         border-radius: 0.2rem;
         box-shadow: inset 0 -9px 0 0 #00000033;
         transition: 150ms;
         text-shadow: 0px 1.5px #00000033;
-        outline: solid 1px $basicFontColor;
+        border: solid 1px $basicFontColor;
         cursor: pointer;
     }
     button:hover,

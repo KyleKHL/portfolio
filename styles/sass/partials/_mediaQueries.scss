@@ -71,7 +71,7 @@
         background-color: $buttonColor;
     }
     .navLinkContact{
-        outline: none;
+        border: none;
     }
     //  navBar/ hamburger menu END
     // start of about me section
@@ -180,7 +180,6 @@
         .contactLinkText::after {
             left: 5px;
             bottom: 4px;
-            height: 4px;
             width: calc((100%) - 12px);
         }
 
@@ -190,7 +189,7 @@
         font-size: .95rem;
     }
     // contact section font
-    .contactIconList li i {
+    .contactIconList li .contactLinkIcon {
         font-size: 2rem;
     }
     .contactIconList li a {
