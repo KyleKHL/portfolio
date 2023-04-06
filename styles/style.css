@@ -512,6 +512,7 @@ section.aboutMe h3 {
 }
 .aboutMeTextContainer p {
   margin: 0;
+  font-size: 1.1rem;
 }
 
 section.skills {
@@ -648,6 +649,10 @@ section.projects h3 {
 
 .projectTextContainer h4 {
   margin-top: 20px;
+}
+
+.projectDescription {
+  font-size: 1.1rem;
 }
 
 .projectButton {
@@ -1029,6 +1034,12 @@ footer .wrapper p {
 @media (max-width: 600px) {
   .typedText {
     font-size: 1.2rem;
+  }
+  .aboutMeTextContainer p {
+    font-size: 1rem;
+  }
+  .projectDescription {
+    font-size: 1rem;
   }
   .iconList {
     width: 80%;

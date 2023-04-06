@@ -27,6 +27,7 @@ section.aboutMe {
     width: 62%;
     p{
         margin: 0;
+        font-size: 1.1rem;
     }
 }
 
@@ -126,6 +127,10 @@ section.projects{
 
 .projectTextContainer h4 {
     margin-top: 20px;
+}
+
+.projectDescription {
+    font-size: 1.1rem;
 }
 
 // project button start
