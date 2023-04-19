@@ -1014,13 +1014,12 @@ footer .wrapper p {
   }
   header .wrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    gap: 0;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 30px;
   }
   header .wrapper .headerTextContainer {
     width: auto;
@@ -1029,7 +1028,8 @@ footer .wrapper p {
             align-items: center;
   }
   header .wrapper .headerImgContainer {
-    width: 80%;
+    max-width: unset;
+    width: 60%;
   }
   .headerTextContainer h1 {
     text-align: center;
@@ -1040,6 +1040,18 @@ footer .wrapper p {
   }
 }
 @media (max-width: 600px) {
+  header {
+    height: auto;
+    min-height: unset;
+  }
+  header .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .wrapper .headerImgContainer {
+    width: 70%;
+  }
   .typedText {
     font-size: 1.2rem;
   }
@@ -1082,6 +1094,12 @@ footer .wrapper p {
   }
 }
 @media (max-width: 370px) {
+  .headerTextContainer h1 {
+    font-size: 2.5rem;
+  }
+  .typedText {
+    font-size: 0.85rem;
+  }
   .projectButton {
     padding-left: 24px;
     padding-right: 24px;
