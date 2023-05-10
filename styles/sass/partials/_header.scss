@@ -38,9 +38,8 @@ header {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .2rem;
-    animation:
-        typing 3.5s steps(22, end),
-        blink 0.85s step-end infinite;
+    animation: typing 1.5s steps(30, end) forwards,
+        blinking 1s infinite;
 }
 
 @keyframes typing {
@@ -53,7 +52,7 @@ header {
 }
 
 
-@keyframes blink {
+@keyframes blinking {
     from,
     to {
         border-color: transparent
